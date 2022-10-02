@@ -1,0 +1,29 @@
+@mixin mobile {
+    @media screen and (min-width:480px) {
+    @content;
+}
+}
+
+
+@mixin table {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+
+
+@mixin disktop {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
+
+
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            @content;
+        }
+    
+}

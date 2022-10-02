@@ -1,0 +1,119 @@
+.mailing {
+    margin-left: auto;
+    margin: 0px 15px;
+
+    @include disktop {
+        display: block;
+    }
+
+
+    &-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--third-title-color);
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    &-input {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
+
+        @include table {
+                margin-bottom: 20px;
+                    width: 100%;
+                    min-width: 450px;
+            }
+
+        
+        @include disktop {
+                min-width: 358px;
+                height: 50px;
+                padding-left: 16px;
+            }
+        height: 50px;
+        padding-left: 16px;
+        background-color: #2F303A;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &-buttom {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+            height: 50px;
+            background: #2196F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: none;
+            padding: 10px 28px;
+        @include table {
+                display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;;
+            }
+
+        @include disktop {
+            display: flex;
+                margin: 0 auto;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 50px;
+                background: #2196F3;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 4px;
+                border: none;
+            
+                
+            }
+        
+    }
+        &-buttom:hover,
+        &-buttom:focus{
+            color: var(--third-title-color);
+                background-color: #188ce8;
+        }
+
+    &-buttom-text {
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        color: var(--third-title-color);
+    }
+
+    &-icon {
+        margin-left: 10px;
+    }
+}
+
+.mailing-form {
+    display: block;
+    justify-content: center;
+    gap: 12px;
+
+@include table {
+    display: block;
+    justify-content: center;
+}
+
+@include disktop {
+    display: flex;
+    justify-content:center;
+}
+}
+

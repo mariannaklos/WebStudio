@@ -1,0 +1,103 @@
+.footer__conteiner {
+    display: block;
+    gap: 60px;
+    justify-content: center;
+    @include table {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content:space-around;
+        margin: auto;
+    }
+            @include disktop {
+           width: 1200px;
+            display: flex;
+        }
+}
+.footer__link{
+    display: block;
+    margin-bottom: 60px;
+   
+    @include table {
+        margin-bottom: 0px;
+
+        @include disktop{
+            margin-bottom: 60px;
+        }
+
+}
+}
+.footer {
+    width: 100%;
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    text-align: center;
+
+    @include disktop {
+        height: 252px;
+        display: block;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align:left;
+        justify-content: baseline;
+        }
+  
+
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &-word {
+        font-family: 'Raleway';
+        font-style: var(--font-style);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--third-title-color);
+    }
+
+    &-address {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        color: var(--third-title-color);
+        transition: color var(--main-transition);
+    }
+
+    &-tell,
+    &-mail {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color var(--main-transition);
+    }
+
+    &-address:hover,
+    &-address:focus {
+        color: var(--interactive-elements-color);
+    }
+
+    &-mail:hover,
+    &-mail:focus {
+        color: var(--interactive-elements-color);
+    }
+
+    &-li {
+        margin-bottom: 9px;
+    }
+
+    &-tell:hover,
+    &-tell:focus {
+        color: var(--interactive-elements-color);
+    }
+}
+.adress-li {
+    margin-bottom: 9px;
+}

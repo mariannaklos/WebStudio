@@ -1,0 +1,72 @@
+.information {
+    display: flex;
+    padding: 60px 15px;
+    @include table{
+            padding: 94px 15px;
+        }
+}
+
+.information-prelist {
+    display: flex;
+    gap: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+.benefits__information-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--second-title-color);
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__slide {
+            width: 100%;
+            @include table {
+                    width: calc((100% - 30px) / 2);
+                }
+            
+            @include disktop {
+                    width: calc((100% - 90px) / 4);
+                }
+    
+        }
+
+    &__icon{
+        margin: 25px 100px;
+    }    
+    &__text {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        // width: 450px;
+        // height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+        &__title {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            @include table {
+                    text-align:left;
+                }
+            
+                @include disktop {
+                    text-align: left;
+                }
+
+            color: var(--main-title-color);
+        }
+}
+
+
